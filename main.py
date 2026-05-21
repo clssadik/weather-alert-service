@@ -3,6 +3,7 @@ import requests
 from dotenv import load_dotenv
 from twilio.rest import Client
 load_dotenv()
+import logic
 
 API_KEY = os.getenv("API_KEY")
 LOC_KEY = os.getenv("LOCATION_IQ_TOKEN")
