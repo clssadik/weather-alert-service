@@ -20,5 +20,6 @@ class Logic():
         return temp,feels_like,rain_percentage,visibility
 
 
-    # def location_logic(self):
+    def location_logic(self):
+        return self.location["display_name"]
         

@@ -32,8 +32,7 @@ data_location = response_location.json()
 
 logic = Logic(data_weather,data_location)
 temp, feels_like, rain_percentage, visibility = logic.weather_logic()
-
-
+address = logic.location_logic()
 
 
 # message = client.messages.create(
