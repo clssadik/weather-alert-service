@@ -10,15 +10,15 @@ class Logic():
         for i in range(0,8):
             temp += self.weather["list"][i]["main"]["temp"]
             feels_like += self.weather["list"][i]["main"]["feels_like"]
-            rain_percentage += self.weather["list"][i]["wind"]["pop"]
-            visibility += self.weather["list"][i]["wind"]["visibility"]
+            rain_percentage += self.weather["list"][i]["pop"]
+            visibility += self.weather["list"][i]["visibility"]
         
         temp = round(temp/8 , 1)
         feels_like = round(feels_like/8 , 1)
-        rain_percentage = (rain_percentage / 8) * 100
+        rain_percentage = int(rain_percentage / 8 * 100)
         visibility = visibility / 8
-        
+        return temp,feels_like,rain_percentage,visibility
 
 
-    def location_logic(self):
+    # def location_logic(self):
         

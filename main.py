@@ -3,7 +3,7 @@ import requests
 from dotenv import load_dotenv
 from twilio.rest import Client
 load_dotenv()
-import logic
+from logic import Logic
 
 API_KEY = os.getenv("API_KEY")
 LOC_KEY = os.getenv("LOCATION_IQ_TOKEN")
@@ -30,19 +30,14 @@ data_weather = response_weather.json()
 response_location = requests.get(LOCATION)
 data_location = response_location.json()
 
-
-temp = 0
-for i in range(0,8):
-    temp += data["list"][i]["main"]["temp"]
-
-temp_24h = temp / 8
-temp_24h = round(temp_24h,1)
+logic = Logic(data_weather,data_location)
+temp, feels_like, rain_percentage, visibility = logic.weather_logic()
 
 
 
 
-message = client.messages.create(
-    from_='whatsapp:+14155238886',
-    body= f"yağmur yağıyor, önümüzdeki 24 saatlik ortalama sıcaklık : {temp_24h}",
-    to='whatsapp:+905073519085'
-)
+# message = client.messages.create(
+#     from_='whatsapp:+14155238886',
+#     body= f"yağmur yağıyor, önümüzdeki 24 saatlik ortalama sıcaklık : {temp_24h}",
+#     to='whatsapp:+905073519085'
+# )
