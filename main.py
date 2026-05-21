@@ -11,7 +11,7 @@ LOC_KEY = os.getenv("LOCATION_IQ_TOKEN")
 LAT = 36.771297
 LONG = 34.569662
 URL = "https://api.openweathermap.org/data/2.5/forecast"
-LOCATION = f"https://us1.locationiq.com/v1/reverse?key={}&lat={LAT}&lon={LONG}&format=json&"
+LOCATION = f"https://us1.locationiq.com/v1/reverse?key={LOC_KEY}&lat={LAT}&lon={LONG}&format=json&"
 
 params = {
     "lat": LAT,
