@@ -11,8 +11,8 @@ account_sid = os.environ["TWILIO_ACCOUNT_SID"]
 auth_token = os.environ["TWILIO_AUTH_TOKEN"]
 client = Client(account_sid, auth_token)
 
-LAT = 36.771297
-LONG = 34.569662
+LAT = 36.7860908
+LONG = 34.5310788
 URL = "https://api.openweathermap.org/data/2.5/forecast"
 LOCATION = f"https://us1.locationiq.com/v1/reverse?key={LOC_KEY}&lat={LAT}&lon={LONG}&format=json&"
 
@@ -31,12 +31,17 @@ response_location = requests.get(LOCATION)
 data_location = response_location.json()
 
 logic = Logic(data_weather,data_location)
-temp, feels_like, rain_percentage, visibility = logic.weather_logic()
+weather = logic.weather_logic()
 address = logic.location_logic()
+text = (f"Güncel Konumun: {address['small_address']}\n"
+        f"Sıcaklık: {weather['temp']}\n"
+        f"Hissedilen Sıcaklık: {weather['feels_like']}\n"
+        f"Yağmur yağma ihtimali: %{weather['rain_percentage']}\n"
+        f"Görüş Mesafesi: {weather['visibility']} km\n"
+        f"{address['town']}, {address['province']}")
 
-
-# message = client.messages.create(
-#     from_='whatsapp:+14155238886',
-#     body= f"yağmur yağıyor, önümüzdeki 24 saatlik ortalama sıcaklık : {temp_24h}",
-#     to='whatsapp:+905073519085'
-# )
+message = client.messages.create(
+    from_='whatsapp:+14155238886',
+    body= text,
+    to='whatsapp:+905073519085'
+)
