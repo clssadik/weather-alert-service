@@ -13,13 +13,22 @@ class Logic():
             rain_percentage += self.weather["list"][i]["pop"]
             visibility += self.weather["list"][i]["visibility"]
         
-        temp = round(temp/8 , 1)
-        feels_like = round(feels_like/8 , 1)
-        rain_percentage = int(rain_percentage / 8 * 100)
-        visibility = visibility / 8
-        return temp,feels_like,rain_percentage,visibility
+        weather_dict = {
+            "temp" : round(temp/8 , 1),
+            "feels_like" : round(feels_like/8 , 1),
+            "rain_percentage" : int(rain_percentage / 8 * 100),
+            "visibility" : round(visibility / 8 / 1000 , 0)
+        }
+        return weather_dict
+        
 
 
     def location_logic(self):
-        return self.location["display_name"]
+        address_dict = {
+            "small_address" : self.location["address"]["university"],
+            "town" : self.location["address"]["town"],
+            "province" : self.location["address"]["province"]
+        }
+        return address_dict
+        
         
