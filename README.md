@@ -75,19 +75,6 @@ Yağışın En Olası Olduğu Zaman: 2026-05-22 09:00:00
 Durum: hafif yağmur
 ```
 
-## Screenshots
-
-<table align="center">
-  <tr>
-    <th>iPhone Shortcuts</th>
-    <th>WhatsApp Summary</th>
-  </tr>
-  <tr>
-    <td><img src="assets/screenshots/iphone-shortcut-phone.png" alt="iPhone Shortcut location automation" width="280"></td>
-    <td><img src="assets/screenshots/whatsapp-summary-phone.png" alt="Weather summary sent through WhatsApp" width="280"></td>
-  </tr>
-</table>
-
 ## Getting Started
 
 ### Prerequisites
@@ -154,11 +141,6 @@ sends it to the configured WhatsApp recipient.
 ```text
 .
 |-- assets/
-|   |-- screenshots/
-|   |   |-- iphone-shortcut-phone.png
-|   |   |-- iphone-shortcut.png
-|   |   |-- whatsapp-summary-phone.png
-|   |   `-- whatsapp-summary.png
 |   `-- weather-flow.svg # Static workflow diagram for the README
 |-- logic.py          # Forecast and location summary logic
 |-- main.py           # API calls, message building, and WhatsApp delivery
