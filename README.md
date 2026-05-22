@@ -77,10 +77,16 @@ Durum: hafif yağmur
 
 ## Screenshots
 
-<p align="center">
-  <img src="assets/screenshots/iphone-shortcut-frame.svg" alt="iPhone Shortcut location automation" width="280">
-  <img src="assets/screenshots/whatsapp-summary-frame.svg" alt="Weather summary sent through WhatsApp" width="280">
-</p>
+<table align="center">
+  <tr>
+    <th>iPhone Shortcuts</th>
+    <th>WhatsApp Summary</th>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/iphone-shortcut-frame.png" alt="iPhone Shortcut location automation" width="280"></td>
+    <td><img src="assets/screenshots/whatsapp-summary-frame.png" alt="Weather summary sent through WhatsApp" width="280"></td>
+  </tr>
+</table>
 
 ## Getting Started
 
@@ -149,9 +155,9 @@ sends it to the configured WhatsApp recipient.
 .
 |-- assets/
 |   |-- screenshots/
-|   |   |-- iphone-shortcut-frame.svg
+|   |   |-- iphone-shortcut-frame.png
 |   |   |-- iphone-shortcut.png
-|   |   |-- whatsapp-summary-frame.svg
+|   |   |-- whatsapp-summary-frame.png
 |   |   `-- whatsapp-summary.png
 |   `-- weather-flow.svg # Static workflow diagram for the README
 |-- logic.py          # Forecast and location summary logic
