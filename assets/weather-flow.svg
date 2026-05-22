@@ -1,4 +1,4 @@
-<svg width="1600" height="320" viewBox="0 0 1600 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1680" height="320" viewBox="0 0 1680 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Weather Alert Service workflow</title>
   <desc id="desc">An iPhone Shortcut sends coordinates to Google Apps Script. The Python app requests forecast and address data, summarizes the result, and sends a WhatsApp message with Twilio.</desc>
 
@@ -8,51 +8,55 @@
     </marker>
     <style>
       .box { fill: #161B22; stroke: #64748B; stroke-width: 2; }
-      .accent { fill: #111827; stroke: #38BDF8; stroke-width: 2; }
-      .line { stroke: #94A3B8; stroke-width: 3; stroke-linecap: round; }
-      .title { fill: #F8FAFC; font: 700 22px Arial, Helvetica, sans-serif; }
-      .label { fill: #CBD5E1; font: 18px Arial, Helvetica, sans-serif; }
+      .line { stroke: #94A3B8; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .title { fill: #F8FAFC; font: 700 21px Arial, Helvetica, sans-serif; }
+      .label { fill: #CBD5E1; font: 17px Arial, Helvetica, sans-serif; }
     </style>
   </defs>
 
-  <path class="line" d="M226 160H286" marker-end="url(#arrow)"/>
-  <path class="line" d="M528 160H588" marker-end="url(#arrow)"/>
-  <path class="line" d="M800 144C840 144 840 80 882 80" marker-end="url(#arrow)"/>
-  <path class="line" d="M800 176C840 176 840 240 882 240" marker-end="url(#arrow)"/>
-  <path class="line" d="M1092 80C1132 80 1132 144 1174 144" marker-end="url(#arrow)"/>
-  <path class="line" d="M1092 240C1132 240 1132 176 1174 176" marker-end="url(#arrow)"/>
-  <path class="line" d="M1334 160H1394" marker-end="url(#arrow)"/>
+  <path class="line" d="M240 160H300" marker-end="url(#arrow)"/>
+  <path class="line" d="M540 160H600" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="24" y="108" width="202" height="104" rx="10"/>
-  <rect class="box" x="286" y="108" width="242" height="104" rx="10"/>
-  <rect class="accent" x="588" y="108" width="212" height="104" rx="10"/>
-  <rect class="box" x="882" y="28" width="210" height="104" rx="10"/>
-  <rect class="box" x="882" y="188" width="210" height="104" rx="10"/>
-  <rect class="accent" x="1174" y="108" width="160" height="104" rx="10"/>
-  <rect class="box" x="1394" y="108" width="182" height="104" rx="10"/>
+  <path class="line" d="M800 160H848"/>
+  <path class="line" d="M848 84V236"/>
+  <path class="line" d="M848 84H900" marker-end="url(#arrow)"/>
+  <path class="line" d="M848 236H900" marker-end="url(#arrow)"/>
 
-  <g text-anchor="middle">
-    <text class="title" x="125" y="151">iPhone Shortcut</text>
-    <text class="label" x="125" y="181">07:00 automation</text>
+  <path class="line" d="M1120 84H1168" marker-end="url(#arrow)"/>
+  <path class="line" d="M1120 236H1168" marker-end="url(#arrow)"/>
+  <path class="line" d="M1172 84V236"/>
+  <path class="line" d="M1172 160H1220" marker-end="url(#arrow)"/>
 
-    <text class="title" x="407" y="151">Google Apps Script</text>
-    <text class="label" x="407" y="181">lat / lon</text>
+  <path class="line" d="M1440 160H1500" marker-end="url(#arrow)"/>
 
-    <text class="title" x="694" y="151">Python app</text>
-    <text class="label" x="694" y="181">main.py</text>
-
-    <text class="title" x="987" y="71">OpenWeather</text>
-    <text class="label" x="987" y="101">forecast</text>
-
-    <text class="title" x="987" y="231">LocationIQ</text>
-    <text class="label" x="987" y="261">address</text>
-
-    <text class="title" x="1254" y="149">Forecast</text>
-    <text class="title" x="1254" y="177">summary</text>
-  </g>
+  <rect class="box" x="20" y="112" width="220" height="96" rx="10"/>
+  <rect class="box" x="300" y="112" width="240" height="96" rx="10"/>
+  <rect class="box" x="600" y="112" width="200" height="96" rx="10"/>
+  <rect class="box" x="900" y="36" width="220" height="96" rx="10"/>
+  <rect class="box" x="900" y="188" width="220" height="96" rx="10"/>
+  <rect class="box" x="1220" y="112" width="220" height="96" rx="10"/>
+  <rect class="box" x="1500" y="112" width="160" height="96" rx="10"/>
 
   <g text-anchor="middle">
-    <text class="title" x="1485" y="151">Twilio</text>
-    <text class="label" x="1485" y="181">WhatsApp</text>
+    <text class="title" x="130" y="151">iPhone Shortcut</text>
+    <text class="label" x="130" y="179">07:00 automation</text>
+
+    <text class="title" x="420" y="151">Google Apps Script</text>
+    <text class="label" x="420" y="179">lat / lon</text>
+
+    <text class="title" x="700" y="151">Python app</text>
+    <text class="label" x="700" y="179">main.py</text>
+
+    <text class="title" x="1010" y="75">OpenWeather</text>
+    <text class="label" x="1010" y="103">forecast</text>
+
+    <text class="title" x="1010" y="227">LocationIQ</text>
+    <text class="label" x="1010" y="255">address</text>
+
+    <text class="title" x="1330" y="151">Forecast summary</text>
+    <text class="label" x="1330" y="179">logic.py</text>
+
+    <text class="title" x="1580" y="151">Twilio</text>
+    <text class="label" x="1580" y="179">WhatsApp</text>
   </g>
 </svg>
