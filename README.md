@@ -1,5 +1,10 @@
 # Weather Alert Service
 
+![Python](https://img.shields.io/badge/Python-Weather%20Automation-3776AB?logo=python&logoColor=white)
+![OpenWeather](https://img.shields.io/badge/OpenWeather-Forecast-EB6E4B)
+![Twilio](https://img.shields.io/badge/Twilio-WhatsApp-F22F46?logo=twilio&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-2EA44F)
+
 Weather Alert Service is a Python application that creates a location-based
 weather summary for the next 24 hours and sends it as a WhatsApp message.
 
@@ -8,6 +13,19 @@ Apps Script endpoint every morning at 07:00. The application reads those
 coordinates, retrieves forecast data from OpenWeather, resolves the coordinates
 to a readable address with LocationIQ, and delivers the final summary through
 Twilio WhatsApp.
+
+## Visual Overview
+
+```mermaid
+flowchart LR
+    A["iPhone Shortcut<br/>07:00 automation"] --> B["Google Apps Script<br/>lat / lon"]
+    B --> C["Python app<br/>main.py"]
+    C --> D["OpenWeather<br/>24-hour forecast"]
+    C --> E["LocationIQ<br/>Readable address"]
+    D --> F["Forecast summary<br/>logic.py"]
+    E --> F
+    F --> G["Twilio<br/>WhatsApp message"]
+```
 
 ## About
 
@@ -45,6 +63,26 @@ entries into a short message with:
 - 24-hour forecast aggregation
 - WhatsApp delivery through Twilio
 - Focused metrics for rain, visibility, temperature, and wind
+
+## Message Preview
+
+```text
+Güncel Konumun: Example address
+
+Önümüzdeki 24 Saatlik Hava Özeti
+Sıcaklık Ortalaması: 14.8°C
+Hissedilen Sıcaklık Ortalaması: 13.9°C
+Ortalama Yağmur İhtimali: %42
+En Yüksek Yağmur İhtimali: %81
+Toplam Beklenen Yağış: 5.6 mm
+Ortalama Görüş Mesafesi: 9.4 km
+En Düşük Görüş Mesafesi: 6.8 km
+Maksimum Rüzgar Hızı: 7.1 m/s
+Maksimum Ani Rüzgar: 11.3 m/s
+
+Yağışın En Olası Olduğu Zaman: 2026-05-22 09:00:00
+Durum: hafif yağmur
+```
 
 ## Getting Started
 
