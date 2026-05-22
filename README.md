@@ -4,9 +4,12 @@
   <img src="assets/banners/weather-alert-ascii.png" alt="Weather Alert Service ASCII banner">
 </p>
 
-![Python](https://img.shields.io/badge/Python-Weather%20Automation-3776AB?logo=python&logoColor=white)
-![OpenWeather](https://img.shields.io/badge/OpenWeather-Forecast-EB6E4B)
-![Twilio](https://img.shields.io/badge/Twilio-WhatsApp-F22F46?logo=twilio&logoColor=white)
+![Python](https://img.shields.io/badge/Python-main.py%20%2B%20logic.py-3776AB?logo=python&logoColor=white)
+![OpenWeather](https://img.shields.io/badge/OpenWeather-Forecast%20API-EB6E4B)
+![LocationIQ](https://img.shields.io/badge/LocationIQ-Reverse%20Geocoding-0EA5E9)
+![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-Location%20Endpoint-4285F4?logo=googleappsscript&logoColor=white)
+![iPhone Shortcuts](https://img.shields.io/badge/iPhone%20Shortcuts-Automation-7C3AED)
+![Twilio](https://img.shields.io/badge/Twilio-WhatsApp%20Delivery-F22F46?logo=twilio&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-2EA44F)
 
 Weather Alert Service is a Python application that creates a location-based
