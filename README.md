@@ -1,5 +1,9 @@
 # Weather Alert Service
 
+<p align="center">
+  <img src="assets/banners/weather-alert-ascii.png" alt="Weather Alert Service ASCII banner">
+</p>
+
 ![Python](https://img.shields.io/badge/Python-Weather%20Automation-3776AB?logo=python&logoColor=white)
 ![OpenWeather](https://img.shields.io/badge/OpenWeather-Forecast-EB6E4B)
 ![Twilio](https://img.shields.io/badge/Twilio-WhatsApp-F22F46?logo=twilio&logoColor=white)
@@ -128,6 +132,8 @@ sends it to the configured WhatsApp recipient.
 ```text
 .
 |-- assets/
+|   |-- banners/
+|   |   `-- weather-alert-ascii.png
 |   |-- previews/
 |   |   |-- iphone-shortcuts.png
 |   |   `-- whatsapp-summary.png
