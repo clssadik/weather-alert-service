@@ -23,7 +23,7 @@ Twilio WhatsApp.
 
 ## Visual Overview
 
-![Weather Alert Service workflow](assets/weather-flow.svg)
+![Weather Alert Service workflow](assets/diagrams/weather-workflow.png)
 
 ## About
 
@@ -137,10 +137,11 @@ sends it to the configured WhatsApp recipient.
 |-- assets/
 |   |-- banners/
 |   |   `-- weather-alert-ascii.png
+|   |-- diagrams/
+|   |   `-- weather-workflow.png
 |   |-- previews/
 |   |   |-- iphone-shortcuts.png
 |   |   `-- whatsapp-summary.png
-|   `-- weather-flow.svg # Static workflow diagram for the README
 |-- logic.py          # Forecast and location summary logic
 |-- main.py           # API calls, message building, and WhatsApp delivery
 |-- requirements.txt  # Python dependencies
