@@ -1,3 +1,4 @@
 .env
 .venv
 opencode.jsonc
+__pycache__/
