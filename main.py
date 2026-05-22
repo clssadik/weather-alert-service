@@ -44,11 +44,23 @@ print(response_location.status_code)
 logic = Logic(data_weather,data_location)
 weather = logic.weather_logic()
 address = logic.location_logic()
-text = (f"Güncel Konumun: {address['small_address']}\n"
-        f"Sıcaklık: {weather['temp']}\n"
-        f"Hissedilen Sıcaklık: {weather['feels_like']}\n"
-        f"Yağmur yağma ihtimali: %{weather['rain_percentage']}\n"
-        f"Görüş Mesafesi: {weather['visibility']} km")
+text = (
+    f"Güncel Konumun: {address['small_address']}\n"
+    f"\n"
+    f"Önümüzdeki 24 Saatlik Hava Özeti\n"
+    f"Sıcaklık Ortalaması: {weather['avg_temp']}°C\n"
+    f"Hissedilen Sıcaklık Ortalaması: {weather['avg_feels_like']}°C\n"
+    f"Ortalama Yağmur İhtimali: %{weather['avg_rain_percentage']}\n"
+    f"En Yüksek Yağmur İhtimali: %{weather['max_rain_percentage']}\n"
+    f"Toplam Beklenen Yağış: {weather['total_rain_mm']} mm\n"
+    f"Ortalama Görüş Mesafesi: {weather['avg_visibility_km']} km\n"
+    f"En Düşük Görüş Mesafesi: {weather['min_visibility_km']} km\n"
+    f"Maksimum Rüzgar Hızı: {weather['max_wind_speed']} m/s\n"
+    f"Maksimum Ani Rüzgar: {weather['max_wind_gust']} m/s\n"
+    f"\n"
+    f"Yağışın En Olası Olduğu Zaman: {weather['rainiest_time']}\n"
+    f"Durum: {weather['rainiest_description']}"
+)
 
 message = client.messages.create(
     from_='whatsapp:+14155238886',
