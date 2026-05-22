@@ -3,9 +3,10 @@
 Weather Alert Service is a Python application that creates a location-based
 weather summary for the next 24 hours and sends it as a WhatsApp message.
 
-The application reads the user's current coordinates from a Google Apps Script
-endpoint, retrieves forecast data from OpenWeather, resolves the coordinates to
-a readable address with LocationIQ, and delivers the final summary through
+An iPhone Shortcut automation sends the user's current coordinates to a Google
+Apps Script endpoint every morning at 07:00. The application reads those
+coordinates, retrieves forecast data from OpenWeather, resolves the coordinates
+to a readable address with LocationIQ, and delivers the final summary through
 Twilio WhatsApp.
 
 ## About
@@ -26,13 +27,16 @@ entries into a short message with:
 
 ## How It Works
 
-1. `main.py` requests latitude and longitude values from the configured Google
+1. An iPhone Shortcut automation captures the user's location every morning at
+   07:00.
+2. The shortcut sends latitude and longitude values to the configured Google
    Apps Script endpoint.
-2. The coordinates are sent to OpenWeather to fetch forecast data.
-3. The same coordinates are sent to LocationIQ to create a readable address.
-4. `logic.py` summarizes the next eight forecast entries, representing the next
+3. `main.py` reads the coordinates from Google Apps Script.
+4. The coordinates are sent to OpenWeather to fetch forecast data.
+5. The same coordinates are sent to LocationIQ to create a readable address.
+6. `logic.py` summarizes the next eight forecast entries, representing the next
    24 hours in the current implementation.
-5. Twilio sends the generated summary as a WhatsApp message.
+7. Twilio sends the generated summary as a WhatsApp message.
 
 ## Features
 
@@ -50,8 +54,10 @@ entries into a short message with:
 - OpenWeather API key
 - LocationIQ API token
 - Twilio account credentials with WhatsApp messaging configured
+- An iPhone Shortcut automation that sends the user's location every morning at
+  07:00
 - A Google Apps Script endpoint that returns the current `lat` and `lon`
-  values after receiving the configured secret
+  values sent by the shortcut after receiving the configured secret
 
 ### Installation
 
