@@ -55,26 +55,6 @@ entries into a short message with:
 - WhatsApp delivery through Twilio
 - Focused metrics for rain, visibility, temperature, and wind
 
-## Message Preview
-
-```text
-Güncel Konumun: Example address
-
-Önümüzdeki 24 Saatlik Hava Özeti
-Sıcaklık Ortalaması: 14.8°C
-Hissedilen Sıcaklık Ortalaması: 13.9°C
-Ortalama Yağmur İhtimali: %42
-En Yüksek Yağmur İhtimali: %81
-Toplam Beklenen Yağış: 5.6 mm
-Ortalama Görüş Mesafesi: 9.4 km
-En Düşük Görüş Mesafesi: 6.8 km
-Maksimum Rüzgar Hızı: 7.1 m/s
-Maksimum Ani Rüzgar: 11.3 m/s
-
-Yağışın En Olası Olduğu Zaman: 2026-05-22 09:00:00
-Durum: hafif yağmur
-```
-
 ## Getting Started
 
 ### Prerequisites
