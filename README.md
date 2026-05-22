@@ -55,6 +55,13 @@ entries into a short message with:
 - WhatsApp delivery through Twilio
 - Focused metrics for rain, visibility, temperature, and wind
 
+## Preview
+
+<p align="center">
+  <img src="assets/previews/iphone-shortcuts.png" alt="iPhone Shortcuts location automation" width="280">
+  <img src="assets/previews/whatsapp-summary.png" alt="Weather summary sent through WhatsApp" width="280">
+</p>
+
 ## Getting Started
 
 ### Prerequisites
@@ -121,6 +128,9 @@ sends it to the configured WhatsApp recipient.
 ```text
 .
 |-- assets/
+|   |-- previews/
+|   |   |-- iphone-shortcuts.png
+|   |   `-- whatsapp-summary.png
 |   `-- weather-flow.svg # Static workflow diagram for the README
 |-- logic.py          # Forecast and location summary logic
 |-- main.py           # API calls, message building, and WhatsApp delivery
