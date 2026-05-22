@@ -1,0 +1,72 @@
+<svg width="1680" height="390" viewBox="0 0 1680 390" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Weather Alert Service workflow</title>
+  <desc id="desc">The iPhone Shortcut automation sends coordinates to Google Apps Script. The Python application reads them, calls OpenWeather and LocationIQ, summarizes the forecast, and sends a WhatsApp message with Twilio.</desc>
+  <defs>
+    <linearGradient id="panel" x1="18" y1="24" x2="1650" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#F2FFF7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1L11 6L1 11V1Z" fill="#526071"/>
+    </marker>
+  </defs>
+
+  <rect x="12" y="12" width="1656" height="366" rx="28" fill="url(#panel)" stroke="#D7E4EE" stroke-width="2"/>
+
+  <path d="M250 196H320" stroke="#526071" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M554 196H624" stroke="#526071" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M846 178C888 178 888 108 932 108" stroke="#526071" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M846 214C888 214 888 284 932 284" stroke="#526071" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M1136 108C1176 108 1176 170 1218 170" stroke="#526071" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M1136 284C1176 284 1176 222 1218 222" stroke="#526071" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M1360 196H1410" stroke="#526071" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="126" width="208" height="140" rx="20" fill="#FFFFFF" stroke="#C9D8E4" stroke-width="2"/>
+    <rect x="320" y="126" width="234" height="140" rx="20" fill="#FFFFFF" stroke="#C9D8E4" stroke-width="2"/>
+    <rect x="624" y="126" width="222" height="140" rx="20" fill="#FFFFFF" stroke="#C9D8E4" stroke-width="2"/>
+    <rect x="932" y="42" width="204" height="132" rx="20" fill="#FFF4E9" stroke="#F0B36D" stroke-width="2"/>
+    <rect x="932" y="218" width="204" height="132" rx="20" fill="#EDF8FF" stroke="#78B8E8" stroke-width="2"/>
+    <rect x="1218" y="126" width="142" height="140" rx="20" fill="#FFFFFF" stroke="#C9D8E4" stroke-width="2"/>
+    <rect x="1410" y="126" width="214" height="140" rx="20" fill="#EFFFF4" stroke="#74C995" stroke-width="2"/>
+  </g>
+
+  <circle cx="92" cy="172" r="22" fill="#8B5CF6"/>
+  <path d="M82 172H102M92 162V182" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="370" cy="172" r="22" fill="#34A853"/>
+  <path d="M360 166H380M360 178H380" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="674" cy="172" r="22" fill="#3776AB"/>
+  <path d="M667 164C667 160 681 160 681 164V172H667V164ZM667 172H681V180C681 184 667 184 667 180V172Z" fill="#FFFFFF"/>
+  <circle cx="982" cy="86" r="22" fill="#EB6E4B"/>
+  <path d="M972 88C972 81 977 77 983 77C989 77 994 81 994 88" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M968 92H998" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="982" cy="262" r="22" fill="#0EA5E9"/>
+  <path d="M982 250C974 250 969 256 969 263C969 274 982 282 982 282C982 282 995 274 995 263C995 256 990 250 982 250Z" fill="#FFFFFF"/>
+  <circle cx="1268" cy="172" r="22" fill="#F59E0B"/>
+  <path d="M1258 162H1278V182H1258V162Z" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="1460" cy="172" r="22" fill="#F22F46"/>
+  <path d="M1450 162H1470V178H1462L1456 184V178H1450V162Z" fill="#FFFFFF"/>
+
+  <g fill="#132238" font-family="Arial, Helvetica, sans-serif">
+    <text x="92" y="218" font-size="22" font-weight="700">iPhone Shortcut</text>
+    <text x="92" y="247" font-size="19">07:00 automation</text>
+    <text x="370" y="218" font-size="22" font-weight="700">Google Apps Script</text>
+    <text x="370" y="247" font-size="19">latitude / longitude</text>
+    <text x="674" y="218" font-size="22" font-weight="700">Python app</text>
+    <text x="674" y="247" font-size="19">main.py</text>
+    <text x="982" y="132" font-size="22" font-weight="700">OpenWeather</text>
+    <text x="982" y="158" font-size="19">24-hour forecast</text>
+    <text x="982" y="308" font-size="22" font-weight="700">LocationIQ</text>
+    <text x="982" y="334" font-size="19">readable address</text>
+    <text x="1268" y="218" font-size="19" font-weight="700" text-anchor="middle">Forecast</text>
+    <text x="1268" y="243" font-size="19" font-weight="700" text-anchor="middle">summary</text>
+  </g>
+
+  <g fill="#132238" font-family="Arial, Helvetica, sans-serif">
+    <text x="1460" y="218" font-size="22" font-weight="700">Twilio</text>
+    <text x="1460" y="247" font-size="19">WhatsApp message</text>
+  </g>
+</svg>

@@ -16,16 +16,7 @@ Twilio WhatsApp.
 
 ## Visual Overview
 
-```mermaid
-flowchart LR
-    A["iPhone Shortcut<br/>07:00 automation"] --> B["Google Apps Script<br/>lat / lon"]
-    B --> C["Python app<br/>main.py"]
-    C --> D["OpenWeather<br/>24-hour forecast"]
-    C --> E["LocationIQ<br/>Readable address"]
-    D --> F["Forecast summary<br/>logic.py"]
-    E --> F
-    F --> G["Twilio<br/>WhatsApp message"]
-```
+![Weather Alert Service workflow](assets/weather-flow.svg)
 
 ## About
 
@@ -149,6 +140,8 @@ sends it to the configured WhatsApp recipient.
 
 ```text
 .
+|-- assets/
+|   `-- weather-flow.svg # Static workflow diagram for the README
 |-- logic.py          # Forecast and location summary logic
 |-- main.py           # API calls, message building, and WhatsApp delivery
 |-- requirements.txt  # Python dependencies
