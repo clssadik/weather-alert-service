@@ -8,17 +8,6 @@ endpoint, retrieves forecast data from OpenWeather, resolves the coordinates to
 a readable address with LocationIQ, and delivers the final summary through
 Twilio WhatsApp.
 
-## Table of Contents
-
-- [About](#about)
-- [How It Works](#how-it-works)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Configuration](#configuration)
-- [Run](#run)
-- [Project Structure](#project-structure)
-- [License](#license)
-
 ## About
 
 This project focuses on a simple daily question: what weather conditions should
