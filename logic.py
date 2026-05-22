@@ -25,7 +25,7 @@ class Logic():
 
     def location_logic(self):
         address_dict = {
-            "small_address" : self.location["address"]["university"],
+            "small_address" : self.location["display_name"],
             "town" : self.location["address"]["town"],
             "province" : self.location["address"]["province"]
         }
