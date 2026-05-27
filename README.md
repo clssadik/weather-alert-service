@@ -1,9 +1,5 @@
 # Weather Alert Service
 
-<p align="center">
-  <img src="assets/banners/weather-alert-ascii.png" alt="Weather Alert Service ASCII banner">
-</p>
-
 ![Python](https://img.shields.io/badge/Python-main.py%20%2B%20logic.py-3776AB?logo=python&logoColor=white)
 ![OpenWeather](https://img.shields.io/badge/OpenWeather-Forecast%20API-EB6E4B)
 ![LocationIQ](https://img.shields.io/badge/LocationIQ-Reverse%20Geocoding-0EA5E9)
